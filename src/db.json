@@ -12,7 +12,7 @@
       "login": "ivan",
       "password": "qwerty123",
       "registed_at": "2035-08-25 20:23",
-      "role_id": 2
+      "role_id": 1
     },
     {
       "id": "dffa",
@@ -47,20 +47,6 @@
       "login": "lilly",
       "password": "qwerty123",
       "registed_at": "2045-12-24 19:47",
-      "role_id": 2
-    },
-    {
-      "id": "f6d0",
-      "login": "annn",
-      "password": "qwerty123",
-      "registed_at": "2055-04-15 12:26",
-      "role_id": 2
-    },
-    {
-      "id": "e915",
-      "login": "any",
-      "password": "qwerty123",
-      "registed_at": "2049-03-15 16:05",
       "role_id": 2
     },
     {
