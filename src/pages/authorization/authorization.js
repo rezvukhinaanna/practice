@@ -4,7 +4,7 @@ import { useState } from "react";
 import { Link, Navigate } from "react-router-dom";
 import * as yup from "yup";
 import { yupResolver } from "@hookform/resolvers/yup";
-import { server } from "../../bff/server";
+import { server } from "../../bff/index";
 import { AuthFormError, Input, Button, H2 } from "../../components";
 import { useResetForm } from "../../hooks";
 import { selectUserRole } from "../../selectors";
@@ -68,6 +68,7 @@ export const AuthorizationContainer = ({ className }) => {
         return;
       }
       dispatch(setUser(res));
+      sessionStorage.setItem("userData", JSON.stringify(res));
     });
   };
 

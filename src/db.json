@@ -189,5 +189,54 @@
       "published_at": "2045-06-05"
     }
   ],
-  "comments": []
+  "comments": [
+    {
+      "id": "4a69",
+      "author_id": "001",
+      "post_id": "001",
+      "published_at": "2047-05-26 21:58",
+      "content": "first"
+    },
+    {
+      "id": "43b0",
+      "author_id": "001",
+      "post_id": "001",
+      "published_at": "2043-01-07 15:47",
+      "content": "second comment\n"
+    },
+    {
+      "id": "2fe3",
+      "author_id": "001",
+      "post_id": "001",
+      "published_at": "2045-08-25 02:05",
+      "content": "third comment\n"
+    },
+    {
+      "id": "9639",
+      "author_id": "001",
+      "post_id": "001",
+      "published_at": "2040-02-04 23:30",
+      "content": "qqq"
+    },
+    {
+      "id": "abf9",
+      "author_id": "001",
+      "post_id": "001",
+      "published_at": "2043-10-10 19:49",
+      "content": "мне пост очень понравился. Написан хорошо!"
+    }
+  ],
+  "sessions": [
+    {
+      "id": "ba7d",
+      "hash": "0.89730710638582844573818420030875131487846374511719",
+      "user": {
+        "id": "001",
+        "login": "anya",
+        "password": "qwerty123",
+        "registeredAt": "2050-09-22",
+        "roleId": 0
+      }
+    }
+  ]
 }
