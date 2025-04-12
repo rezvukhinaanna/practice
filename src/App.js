@@ -1,10 +1,10 @@
 import { Routes, Route } from "react-router-dom";
-import { Header, Footer } from "./components";
-import { useDispatch } from "react-redux";
-import { Authorization, Registration, Users, Post } from "./pages";
-import { setUser } from "./actions";
-import styled from "styled-components";
 import { useLayoutEffect } from "react";
+import { useDispatch } from "react-redux";
+import { setUser } from "./actions";
+import { Header, Footer, Modal } from "./components";
+import { Authorization, Registration, Users, Post } from "./pages";
+import styled from "styled-components";
 
 const AppColumn = styled.div`
   display: flex;
@@ -30,7 +30,7 @@ function App() {
       return;
     }
 
-    const currentUserData = JSON.parse(currentUserDataJSON)
+    const currentUserData = JSON.parse(currentUserDataJSON);
 
     dispatch(
       setUser({
@@ -57,6 +57,7 @@ function App() {
         </Routes>
       </Page>
       <Footer />
+      <Modal />
     </AppColumn>
   );
 }

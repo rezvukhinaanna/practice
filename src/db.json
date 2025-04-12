@@ -19,7 +19,7 @@
       "login": "alex",
       "password": "qwerty123",
       "registed_at": "2054-09-13 16:54",
-      "role_id": 2
+      "role_id": 1
     },
     {
       "id": "4de9",
@@ -198,27 +198,6 @@
       "content": "first"
     },
     {
-      "id": "43b0",
-      "author_id": "001",
-      "post_id": "001",
-      "published_at": "2043-01-07 15:47",
-      "content": "second comment\n"
-    },
-    {
-      "id": "2fe3",
-      "author_id": "001",
-      "post_id": "001",
-      "published_at": "2045-08-25 02:05",
-      "content": "third comment\n"
-    },
-    {
-      "id": "9639",
-      "author_id": "001",
-      "post_id": "001",
-      "published_at": "2040-02-04 23:30",
-      "content": "qqq"
-    },
-    {
       "id": "abf9",
       "author_id": "001",
       "post_id": "001",
@@ -228,8 +207,8 @@
   ],
   "sessions": [
     {
-      "id": "ba7d",
-      "hash": "0.89730710638582844573818420030875131487846374511719",
+      "id": "636d",
+      "hash": "0.48208784786259961663290596334263682365417480468750",
       "user": {
         "id": "001",
         "login": "anya",
