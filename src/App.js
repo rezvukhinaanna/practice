@@ -52,7 +52,8 @@ function App() {
           <Route path="/register" element={<Registration />} />
           <Route path="/users" element={<Users />} />
           <Route path="/post" element={<div>Новая статья</div>} />
-          <Route path="/post/:postId" element={<Post />} />
+          <Route path="/post/:id" element={<Post />} />
+          <Route path="/post/:id/edit" element={<Post />} />
           <Route path="*" element={<div>Ошибка</div>} />
         </Routes>
       </Page>
