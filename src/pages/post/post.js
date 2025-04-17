@@ -18,15 +18,16 @@ const PostContainer = ({ className }) => {
   useLayoutEffect(() => {
     dispatch(RESET_POST_DATA);
   }, [dispatch, isCreating]);
-
+  
   useEffect(() => {
     if (isCreating) {
       return;
     }
-
+    
     dispatch(loadPostAsync(requestServer, params.id));
   }, [dispatch, requestServer, params.id, isCreating]);
-
+  
+  console.log(post)
   return (
     <div className={className}>
       {isCreating || isEditing ? (

@@ -2,9 +2,9 @@ import { getPost, getComments, getUsers } from "../api";
 
 export const fetchPost = async (postId) => {
   const post = await getPost(postId);
-
+  console.log('fetch-post',post)
   const comments = await getComments(postId);
-
+  console.log('fetch-post1',post)
   const users = await getUsers();
 
   const commentsWithAuthor = comments.map((comment) => {
@@ -14,7 +14,7 @@ export const fetchPost = async (postId) => {
       author: user?.login,
     };
   });
-
+  console.log('fetch-post',postId)
   return {
     error: null,
     res: {
