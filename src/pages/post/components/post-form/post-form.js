@@ -52,7 +52,6 @@ const PostFormContainer = ({
       />
       <Input
         value={titleValue}
-        defaultValue={title}
         placeholder="Заголовок..."
         onChange={onTitleChange}
       />
