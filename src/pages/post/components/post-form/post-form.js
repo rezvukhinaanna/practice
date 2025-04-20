@@ -36,7 +36,7 @@ const PostFormContainer = ({
         title: titleValue,
         content: newContent,
       })
-    ).then(({id}) => navigate(`/post/${id}`));
+    ).then(({ id }) => navigate(`/post/${id}`));
   };
 
   const onImageChange = ({ target }) => setImageUrlValue(target.value);
@@ -60,7 +60,14 @@ const PostFormContainer = ({
         id={id}
         publishedAt={publishedAt}
         margin="20px 0"
-        editButton={<Icon id="fa-floppy-o" size="21px" onClick={onSave} />}
+        editButton={
+          <Icon
+            id="fa-floppy-o"
+            size="21px"
+            margin="0 10px 0 0"
+            onClick={onSave}
+          />
+        }
       />
       <div
         ref={contentRef}
