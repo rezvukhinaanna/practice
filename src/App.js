@@ -2,7 +2,8 @@ import { Routes, Route } from "react-router-dom";
 import { useLayoutEffect } from "react";
 import { useDispatch } from "react-redux";
 import { setUser } from "./actions";
-import { Header, Footer, Modal } from "./components";
+import { Header, Footer, Modal, Error } from "./components";
+import { ERROR } from "./constants";
 import { Authorization, Main, Registration, Users, Post } from "./pages";
 import styled from "styled-components";
 
@@ -39,8 +40,6 @@ function App() {
         roleId: Number(currentUserData.roleId),
       })
     );
-
-    // console.log(currentUserData)
   }, [dispatch]);
 
   return (
@@ -55,7 +54,7 @@ function App() {
           <Route path="/post" element={<Post />} />
           <Route path="/post/:id" element={<Post />} />
           <Route path="/post/:id/edit" element={<Post />} />
-          <Route path="*" element={<div>Ошибка</div>} />
+          <Route path="*" element={<Error error={ERROR.PAGE_NOT_EXIST} />} />
         </Routes>
       </Page>
       <Footer />

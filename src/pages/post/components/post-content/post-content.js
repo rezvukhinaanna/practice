@@ -8,7 +8,7 @@ const PostContentContainer = ({
   post: { id, title, imageUrl, content, publishedAt },
 }) => {
   const navigate = useNavigate();
-console.log('post-content',id, title, imageUrl, content, publishedAt)
+
   return (
     <div className={className}>
       <img src={imageUrl} alt={title}></img>
